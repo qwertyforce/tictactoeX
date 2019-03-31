@@ -1,0 +1,159 @@
+@media (max-width: 590px) {  
+  .display-4 {font-size:12vw  !important;} 
+}
+ @media (min-width: 591px) {  
+  .display-4  {font-size:3.5rem  !important;} 
+}
+@media (max-width: 590px) {  
+  .display-3 {font-size:16vw  !important;} 
+}
+ @media (min-width: 591px) {  
+  .display-3  {font-size:4.5rem  !important;} 
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+.bullet {
+    background: #696969;
+    border-radius: 30px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin: 0 7px 0 0
+}
+
+.online {
+    background: #68b541
+}
+
+.offline {
+    background: #d9534f
+}
+
+body {
+  overscroll-behavior-y: none;
+}
+
+.connecting {
+    background: #5bc0de
+}
+
+.fade-enter-active,.fade-leave-active {
+    transition-property: opacity;
+    transition-duration: .25s
+}
+
+.fade-enter-active {
+    transition-delay: .25s
+}
+
+.fade-enter,.fade-leave-active {
+    opacity: 0
+}
+
+[v-cloak] {
+    display: none
+}
+
+#server_info {
+    padding: 5px
+}
+#change_theme_button{
+    background-color: #868e96eb;
+    margin-right: 10px;
+}
+#Stat_modes{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.display-2{
+font-size: 2.5rem !important;
+}
+.col{
+ margin-bottom: 30px !important;
+}
+body.light-theme {
+  background-color: #424242;
+  color:white;
+}
+body.light-theme .navbar-light{
+  background-color: black !important;
+}
+body.light-theme .navbar-brand {
+  color:white !important;
+}
+body.light-theme  .navbar-toggler {
+  border-color:white !important;
+   background-color: white !important;
+}
+body.light-theme  .navbar-nav {
+  color:white !important;
+}
+body.light-theme  .nav-link {
+  color:white !important;
+}
+body.light-theme  #server_info {
+  background-color:black !important;
+}
+body.light-theme  .modal-content {
+  background-color:grey !important;
+}
+body.light-theme .disabled{
+  background-color: #606060 !important;
+}
+body.light-theme .card{
+  background-color: grey !important;
+}
+body.light-theme .card-header{
+  background-color: #909090 !important;
+}
+body.light-theme .list-group-item{
+  background-color: #757575 !important;
+  color:black !important;
+}
+body.light-theme .chat-box-body{
+  color:black !important;
+}
+@media (max-width: 992px){
+#LeftColumn{
+padding-right: 0;
+}
+#RightColumn{
+padding-left: 0;
+}
+}
