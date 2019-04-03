@@ -13,6 +13,7 @@ self.addEventListener('install', (event) => {
                 'https://fonts.googleapis.com/icon?family=Material+Icons',
                 'https://4battle.ru/homescreen.png', 
                 'https://4battle.ru/manifest.json',
+                'https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2',
                 'https://4battle.ru/1'])
     }).then(function() {
         return self.skipWaiting()
@@ -27,13 +28,13 @@ self.addEventListener('fetch', function(event) {
         event.respondWith(fetch(event.request).catch(error => console.log(error)) )
     }else if((event.request.url.indexOf('homescreen.png') !== -1) || (event.request.url.indexOf('manifest.json') !== -1)){
         console.log(event.request.url + ' from cache')
-        event.respondWith(fromCache(event.request).catch(error => console.log("manifest/homescreen")))
+        event.respondWith(fromCache(event.request).catch(error => console.log("manifest/homescreen error")))
     }else if((event.request.url.indexOf('4battle.ru') !== -1)){
         console.log(event.request.url + ' not from cache')
         event.respondWith(fetch(event.request).catch(error => fromCache("https://4battle.ru/1")))
     }else{
         console.log(event.request.url + ' from cache')
-        event.respondWith(fromCache(event.request).catch(error =>console.log("analytics blocked")))
+        event.respondWith(fromCache(event.request).catch(error =>console.log("cant get "+event.request.url+" from cache")))
     }
 
    })
