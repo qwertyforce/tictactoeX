@@ -4,6 +4,9 @@
       <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
+             <li class="nav-item">
+             <router-link to="/game_offline"  class="nav-link" >Game against AI</router-link>
+          </li>
           <li class="nav-item">
              <router-link to="/news"  class="nav-link" >News</router-link>
           </li>

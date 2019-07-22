@@ -7,6 +7,7 @@ import Profile from './views/profile.vue'
 import Profile_detailed from './views/profile_detailed.vue'
 import Stats from './views/server_stats.vue'
 import Game from './views/game.vue'
+import Game_offline from './views/game_offline.vue'
 
 Vue.use(Router)
 
@@ -37,6 +38,11 @@ export default new Router({
     {
       path: '/game',
       component: Game
+    },
+    ,
+    {
+      path: '/game_offline',
+      component: Game_offline
     },
     {
       path: '/profile/:id',

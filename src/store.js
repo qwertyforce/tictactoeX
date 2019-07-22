@@ -32,8 +32,8 @@ export default new Vuex.Store({
     countdown_step(state) {
       state.seconds = state.seconds-1;
     },
-    clear_time(state){
-     state.seconds=45;
+    clear_time(state,time){
+     state.seconds=time;
     },
     set_player_min_count (state, min_count) {
       state.player_min_count = min_count;

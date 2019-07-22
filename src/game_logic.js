@@ -15,8 +15,6 @@ var socket = io.connect("wss://" + sitename, {
      wrapper.socket=socket;
     },
     game_start:function(store,getParameterByName,escapeHtml){
-console.log(store);
-console.log(getParameterByName);
 var socket=wrapper.socket;
   window.onunload = function(){
  socket.disconnect()
@@ -174,7 +172,7 @@ console.log(g_cellSize);
  }
 
  function Move_transition() {
-    store.commit("clear_time");
+    store.commit("clear_time",45);
      clearInterval(timer);
      timer = setInterval(timer_F, 1000);
 
