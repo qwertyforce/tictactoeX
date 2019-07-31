@@ -2,7 +2,7 @@
 var wrapper={
     game_start:function(store){
 var Engine = new Worker("worker.js");
-var Time_for_move=prompt("Введите время на 1 ход (в секундах)");
+var Time_for_move=prompt("Enter the time for ai to think (in seconds)");
 if (Time_for_move===null){
     location.replace("https://4battle.ru")
 }
