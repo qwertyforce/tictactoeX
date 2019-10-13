@@ -11,11 +11,11 @@ self.addEventListener('install', (event) => {
               'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0',
                'https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js',
                 'https://fonts.googleapis.com/icon?family=Material+Icons',
+                'https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2',
                 'https://4battle.ru/homescreen.png', 
                 'https://4battle.ru/manifest.json',
                 'https://4battle.ru/app.js',
                 'https://4battle.ru/worker.js',
-                'https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2',
                 'https://4battle.ru/game_offline',
                 'https://4battle.ru/1'])
     }).then(function() {
