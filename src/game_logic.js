@@ -319,7 +319,7 @@ console.log(g_cellSize);
                  won = true;
                  xx = i;
                  yy = j;
-                 for (ii = 0; ii <= (LengthForBonus - 1); ii++) {
+                 for (var ii = 0; ii <= (LengthForBonus - 1); ii++) {
                      if (xx < 0 || xx >= Game_Board.length || yy < 0 || yy >= Game_Board[0].length) {
                          won = false;
                          break;
